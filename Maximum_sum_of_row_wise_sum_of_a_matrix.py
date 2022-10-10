@@ -1,7 +1,6 @@
 r,c=map(int,input().split())
-s=0
-maxi=[]
+mat=[]
 for i in range(r):
     l=list(map(int,input().split()))
-    maxi.append(sum(l))
-print(max(maxi))
+    mat.append(sum(l))
+print(max(mat))
