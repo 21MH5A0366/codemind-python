@@ -1,0 +1,67 @@
+Stack::
+
+string reverseWord(string str){
+    stack<char>sai;
+    for(int i=0;i<str.size();i++){
+        sai.push(str[i]);
+    }
+    str.clear(); 
+    while(!sai.empty()){
+        str+=sai.top();
+        sai.pop();  
+    }
+    return str;  
+}
+
+
+————————For reverse of a string------—————
+
+
+  stack<char>stc;
+         for(int i=0;i<St.size();i++){
+             stc.push(St[i]);
+         }
+         St.clear();
+         while(!stc.empty()){
+             St+=stc.top();
+             stc.pop();  
+         }
+         return St;  
+    }
+Reverse a Stack gfg
+
+
+____________________________________________________
+
+
+#include<iostream>
+using namespace std;
+void Takeinput(){
+    #ifndef ONLINE_JUDGE
+    freopen("input.txt", "r", stdin);
+    freopen("output.txt", "w", stdout);
+    #endif
+}
+int main() {
+    Takeinput();
+    stack<int>st;   //decleration of stack
+    st.push(10);
+    st.push(20);
+    st.push(50);
+    /*st.pop();     // is used to remove 
+    st.pop();
+    st.pop();*/
+
+    /*st.top();      to get top elememt
+    */
+
+    /*st.empty();    check stack is empty or not
+    */
+    while(!st.empty()){
+        cout<<st.top()<<" ";
+        st.pop();
+    }
+
+      
+}
+
